@@ -1,0 +1,67 @@
+/* Override Element Defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Import Font */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./assets/outfit.ttf);
+}
+
+/* Page Defaults and Variables */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grey: hsl(220, 15%, 55%);
+    --test: #7D889E;
+    --dark-navy: hsl(218, 44%, 22%);
+
+    font-size: 15px;
+    font-family: Outfit;
+}
+
+body {
+    align-items: center;
+    background-color: var(--light-gray);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+    padding: 16px;
+    text-align: center;
+    width: 320px;
+}
+
+.card-image {
+    border-radius: 16px;
+    width: 100%;
+}
+
+.card-text {
+    margin-top: 24px;
+    padding: 0 12px;
+}
+
+.card-title {
+    color: var(--dark-navy);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.card-description {
+    color: var(--grey);
+    letter-spacing: 0.1875px;
+    line-height: 19px;
+    margin-top: 16px;
+    padding-bottom: 40px;
+}
